@@ -4,20 +4,27 @@
 	<meta name="description" content="Drawing Shapes w/ D3 - " />
 	<meta charset="UTF-8" />
 	<title>JavaScript/D3 Drawing</title>
+	<script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
 </head>
 <body>
 	<h1>SVG Bar</h1>
 
 	<svg>
-		<rect width="45" height="200" style="fill: #4050FF;"
+		<rect width="45" height="110" style="fill: #4050FF;"
 	</svg>
 
 	<h2>D3JS Bar in SVG</h2>
 	<script>
 		d3.select('body')
+		.append('svg')
+		.append('rect')
+		.attr('width', 45)
+		.attr('height', 110)
+		.style('fill', '#BD475F');
+
+
 	</script>
 
-	<script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
 
 	
 </body>
